@@ -1,0 +1,3 @@
+/Users/charlesbta/Documents/GitHub/dm4-roulette/cmake-build-debug/CMakeFiles/dm4_roulette.dir
+/Users/charlesbta/Documents/GitHub/dm4-roulette/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/charlesbta/Documents/GitHub/dm4-roulette/cmake-build-debug/CMakeFiles/rebuild_cache.dir
