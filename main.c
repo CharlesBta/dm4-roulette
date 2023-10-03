@@ -8,7 +8,6 @@ int aleatroire() {
     return generated_number >= 500;
 }
 
-
 int main() {
     int montant_total;
     int mise;
@@ -16,7 +15,7 @@ int main() {
     printf("Combien d'argent avez vous ?(€)");
     scanf("%d", &montant_total);
     getchar();
-    printf("1. Joueur\n2. Quitter\n");
+    printf("1. Joueur\n2. Retirer\n");
     scanf("%d", &value);
     getchar();
     while (value != 2) {
@@ -37,15 +36,16 @@ int main() {
                 return 0;
             }
             printf("Solde actuel: %d\n", montant_total);
-            printf("1. Joueur\n2. Quitter\n");
+            printf("1. Joueur\n2. Retirer\n");
             scanf("%d", &value);
             getchar();
         } else if (value != 1) {
             printf("valeur impossible\n");
-            printf("1. Joueur\n2. Quitter\n");
+            printf("1. Joueur\n2. Retirer\n");
             scanf("%d", &value);
             getchar();
         }
     }
+    printf("Vous repartez avec: %d",montant_total);
     return 0;
 }
