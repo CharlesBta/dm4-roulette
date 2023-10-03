@@ -20,7 +20,7 @@ int main() {
     getchar();
     while (value != 2) {
         if (value == 1) {
-            printf("Solde actuel: %.2f\n", montant_total);
+            printf("Solde actuel: %.2f€\n", montant_total);
             printf("mise(€): ");
             scanf("%f", &mise);
             getchar();
@@ -31,21 +31,21 @@ int main() {
                     montant_total += mise;
                 } else montant_total -= mise;
             }
-            if(montant_total == 0){
+            if(montant_total <= 0){
                 printf("Perdu solde nul");
                 return 0;
             }
-            printf("Solde actuel: %.2f\n", montant_total);
+            printf("Solde actuel: %.2f€\n", montant_total);
             printf("1. Joueur\n2. Retirer\n");
             scanf("%d", &value);
             getchar();
         } else if (value != 1) {
             printf("valeur impossible\n");
             printf("1. Joueur\n2. Retirer\n");
-            scanf("%.2", &value);
+            scanf("%d", &value);
             getchar();
         }
     }
-    printf("Vous repartez avec: %.2f",montant_total);
+    printf("Vous repartez avec: %.2f€",montant_total);
     return 0;
 }
