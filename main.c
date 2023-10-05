@@ -28,6 +28,7 @@ int main() {
                 printf("error somme impossible\n");
             } else {
                 if (aleatroire() == 1) {
+                    printf("Victoire!\n");
                     montant_total += mise;
                 } else montant_total -= mise;
             }
